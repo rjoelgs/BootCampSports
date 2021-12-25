@@ -1,0 +1,140 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --base-color: #F9EC81;
+}
+body{
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    font-family: helvetica;
+}
+.header{
+    display: block;
+    z-index: 1000;
+    position: relative;
+}    
+.logo{
+    width: 100%;
+    background-color: #0A0E43;
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3em;
+    align-items: center;
+}
+span{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2em;
+}
+.input{
+    display: flex;
+}
+button{
+    height: 20px;
+}
+button img{
+    width: 20px;
+    height: 20px;
+}
+.options{
+    background-color: #0A0E43;
+    width: 100%;
+    height: 2em;
+}
+.options ul{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: flex-start;
+    list-style: none;
+    
+}
+.options ul li{
+    padding: 0 2em;
+}
+.options ul li:hover{
+    cursor: pointer;
+    text-shadow: #CCC 1px 0 10px;
+}
+
+.main{
+    position: relative;
+    width: 90%;
+    height: 500px;
+    background-color: #FFF9C4;
+    padding: 2em;
+    margin: auto;
+}
+.img1{
+    margin-right: 2em;
+    position: absolute;
+    right: 19px;
+    padding: auto;
+    width:70%;
+    height: 400px;
+    object-fit:cover;
+    object-position: top;
+    z-index: 200;
+    border-radius: 3px;
+}
+.decoration{
+    position: absolute;
+    z-index: 100;
+    top: 8em;
+    width: 95%;
+    height: 400px;
+    background-color: #B4A631;
+}
+.decoration2{
+    position: absolute;
+    z-index: 300;
+    width: 50%;
+    height: 200px;
+    background-color: #FFF9C4;
+    bottom: 0;
+    border-radius: 3px;
+    color: #0A0E43;
+    padding-top: 4em;
+}
+
+.img2{
+    position: absolute;
+    width: 39em;
+    height: auto;
+    z-index: 400;
+    transform: rotate(31deg);
+    top: 9em;
+    left: 15em;
+    object-fit: cover;
+    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.7));
+}
+.container{
+    width: 100%;
+    height: 600px;
+    background-color: #9C56A3;
+}
+.container h4{
+    padding-top:3em;
+    padding-left: 2em;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.flex-container div{
+    width: 350px;
+    height: 450px;
+    margin: 2em;
+}
+.flex-container div img{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 4px;
+}
