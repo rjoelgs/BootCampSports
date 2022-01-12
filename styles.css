@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    width: 100%;
+}
 :root{
     --base-color: #F9EC81;
 }
@@ -11,14 +14,15 @@ body{
     font-weight: 400;
     font-size: 1rem;
     color: white;
-    font-family: helvetica;    
+    font-family: helvetica;   
+    
 }
 
 /* /////////////////HEADER////////////////// */
 header{ 
     display: block;
     z-index: 1000; 
-    position: fixed;
+    position: relative;
     width: 100%;
     overflow: hidden;
 }    
@@ -28,7 +32,7 @@ header{
     height: 1.5em;
     display: flex;
     justify-content: space-between;
-    padding: 0 3em;
+    padding: 0 2em;
     align-items: center;
 }
 span{
@@ -58,7 +62,7 @@ button img{
     align-items: flex-end;
     justify-content: flex-start;
     list-style: none;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 .options ul li{
     padding: 0 2em;
@@ -67,7 +71,9 @@ button img{
 .options ul li:hover{
     cursor: pointer;
     text-shadow: #CCC 1px 0 10px;
-    background-color: #131a77a8;
+    background-color: #9d56a39c;
+    transform: scale(1.1);
+    font-weight: 500;
 }
 
 /* ////////////////////////MAIN/////////////////////// */
@@ -78,6 +84,7 @@ button img{
     background-color: #FFF9C4;
     padding: 2em;
     margin:auto;
+    
 }
 .img1{
     margin-right: 2em;
@@ -87,6 +94,7 @@ button img{
     width:70%;
     height: 400px;
     object-fit:cover;
+    object-position: right;
     z-index: 200;
     border-radius: 3px;
 }
@@ -172,9 +180,11 @@ button{
 .container2{
     width: 100%;
     height: auto;
-    background-color: #9C56A3;
+    background: rgb(10,14,67);
+    background: linear-gradient(0deg, rgba(10,14,67,1) 0%, rgba(156,86,163,1) 2%);
     padding-top: 5em;
     padding-bottom: 3em;
+    
 }
 .flex-container2{
     position: relative;
@@ -200,7 +210,7 @@ button{
     cursor: pointer;
 }
 .img-container img:hover{
-    transform: rotate(0deg) scale(1.5);
+    transform: rotate(0deg) scale(1.4);
 }
 /* ////////////////////FOOTER///////////////////// */
 footer{
@@ -225,16 +235,56 @@ footer li{
         display: none;
     }
     .main{
+        padding: 0;
         width: 100%;
     }
     .img1{
-        width: 90%
+        width: 100%
     }
     .decoration2{
         min-width: 421px;
-        left: 10px;
+        left: 0;
         right: none;
         padding: 2em 1em 0 1em;
 
+    }
+}
+@media screen and (max-width: 630px) {
+    .logo{
+        height: 2em;   
+    }
+    .input{
+        transform: translateY(-8px);
+    }
+    .options{
+        display: none;
+    }
+    main{
+        width: 100%;
+        margin: 0;
+    }
+    .decoration{
+        display: none;
+    }
+   .decoration2{
+       width: 100%;
+       margin: 0;
+       min-width: 100px;
+   }
+   .img1{
+       right:0;
+       margin-right: 0;
+   }
+   .img-container{
+       width: 180px;
+       height: 300px;
+    }
+    .flex-container2 img{
+        width: 200px;
+        height: 200px;
+        transform: translateX(-50px);
+    }
+    .img-container img:hover{
+        transform: rotate(30deg) scale(1.1) translateX(-32px);
     }
 }
