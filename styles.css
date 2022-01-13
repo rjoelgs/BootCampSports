@@ -12,7 +12,7 @@ html{
 }
 body{
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: white;
     font-family: helvetica;   
     
@@ -43,6 +43,9 @@ span{
 .input{
     display: flex;
     padding-top: 1em;
+}
+input{
+    border-radius: 5px;
 }
 button{
     height: 15px;
@@ -136,7 +139,7 @@ button img{
     width: 100%;
     height: auto;
     background-color: #9C56A3;
-    padding-top: 5em;
+    padding-top: 3em;
 }
 h4{
     padding-top:3em;
@@ -182,7 +185,7 @@ button{
     height: auto;
     background: rgb(10,14,67);
     background: linear-gradient(0deg, rgba(10,14,67,1) 0%, rgba(156,86,163,1) 2%);
-    padding-top: 5em;
+    padding-top: 3em;
     padding-bottom: 3em;
     
 }
@@ -208,9 +211,16 @@ button{
     border-radius: 10px;
     margin: .5em;
     cursor: pointer;
+    color: #FFF9C4;
+    font-size: .9em;
 }
 .img-container img:hover{
     transform: rotate(0deg) scale(1.4);
+}
+b{
+    color: #0A0E43;
+    font-weight: 600;  
+    letter-spacing: -2px;
 }
 /* ////////////////////FOOTER///////////////////// */
 footer{
@@ -221,6 +231,11 @@ footer{
     align-items: flex-start;
     justify-content: space-evenly;
     padding: 1em;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+footer div{
+    min-width: 100px;
 }
 footer li{
     list-style: none;
@@ -239,29 +254,37 @@ footer li{
         width: 100%;
     }
     .img1{
-        width: 100%
+        width: 90%
+    }
+    .decoration{
+        left: 2em;
     }
     .decoration2{
         min-width: 421px;
         left: 0;
         right: none;
-        padding: 2em 1em 0 1em;
-
+        padding: .5em 1em 0 1em;
     }
 }
 @media screen and (max-width: 630px) {
     .logo{
-        height: 2em;   
+        height: 2.5em;   
+        justify-content: start;
+        padding: 15px;
     }
     .input{
-        transform: translateY(-8px);
+        transform: translateY(-8px) scale(.9);
+    }
+    span{
+        scale: .9;
     }
     .options{
         display: none;
     }
-    main{
+    .main{
         width: 100%;
         margin: 0;
+        height: 400px;
     }
     .decoration{
         display: none;
@@ -272,19 +295,10 @@ footer li{
        min-width: 100px;
    }
    .img1{
+       width: 100%;
        right:0;
        margin-right: 0;
+       height: 200px;
    }
-   .img-container{
-       width: 180px;
-       height: 300px;
-    }
-    .flex-container2 img{
-        width: 200px;
-        height: 200px;
-        transform: translateX(-50px);
-    }
-    .img-container img:hover{
-        transform: rotate(30deg) scale(1.1) translateX(-32px);
-    }
+
 }
